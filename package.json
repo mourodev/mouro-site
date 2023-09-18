@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "commit-msg": "npm run lint-commit"
     }
   },
   "scripts": {
@@ -13,7 +13,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "commit": "npx commitlint -E HUSKY_GIT_PARAMS"
+    "lint-commit": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "dependencies": {
     "astro": "^3.1.0"
