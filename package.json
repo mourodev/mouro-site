@@ -13,6 +13,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "prepare": "husky install",
     "lint-commit": "commitlint -E HUSKY_GIT_PARAMS"
   },
   "dependencies": {
