@@ -1,6 +1,5 @@
 {
   "name": "mourodev",
-  "type": "module",
   "version": "0.0.1",
   "husky": {
     "hooks": {
@@ -13,7 +12,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint-commit": "commitlint -E HUSKY_GIT_PARAMS"
+    "lint-commit": "commitlint -E HUSKY_GIT_PARAMS",
+    "commit": "cz"
   },
   "dependencies": {
     "astro": "^3.1.0"
@@ -21,6 +21,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
+    "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
