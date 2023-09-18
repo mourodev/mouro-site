@@ -14,7 +14,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "prepare": "husky install",
-    "lint-commit": "commitlint -E HUSKY_GIT_PARAMS"
+    "lint-commit": "commitlint -E HUSKY_GIT_PARAMS",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "dependencies": {
     "astro": "^3.1.0"
@@ -23,7 +25,8 @@
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^8.0.3"
+    "husky": "^8.0.3",
+    "prettier-plugin-astro": "^0.12.0"
   },
   "config": {
     "commitizen": {
